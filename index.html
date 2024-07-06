@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodct Card</title>
+</head>
+<body>
+    <h1>Increment and Decrement for Product Items</h1>
+    <div class="product-card">
+        <img src="watch.png" class="watch-img">
+        <div class="card-body">
+        <h1 class="title">Smart Watch</h1>
+        <p>
+            <ul class="desc">
+                <li>Brand - FONACC </li>
+                <li>Style - Modern</li>
+                <li> Color - Black </li>
+                <li> Screen Size - 1.69 Inches </li>
+        </ul>
+        </p>
+        <p class="product-price">
+            ₹1500/-
+        </p>
+        <p id="show-qantity">1 x 1500</p>
+        <p id="show-total">Total : 1500</p>
+        <div class="quantity-container">
+            <img src="minus.png" class="btn-quantity" onclick="dec()" >
+            <span class="quantity-text" id="quantity-text">1</span>
+            <img src="plus.png" class="btn-quantity" onclick="inc()">
+        </div>
+       
+        <button type="button" class="btn">Buy  Now</button>
+    </div>
+    </div>
+    <script>
+        function inc(){
+           const quantityText = document.getElementById("quantity-text");
+           const showQantity = document.getElementById("show-qantity");
+           const showTotal = document.getElementById("show-total");
+          let quantity =parseInt( quantityText.innerText);
+         
+
+          if(quantity<5)
+          {
+            quantityText.innerText = ++quantity;
+          }
+         else {
+            alert("You cannot add more than 5 items.");
+        }
+        showQantity.innerText = `${Qantity} x 1500`;
+        showTotal.innerText =`Total:${quantity*1500}`;
+        }
+        
+        function dec(){
+           const quantityText = document.getElementById('quantity-text');
+           const showQantity = document.getElementById('show-qantity');
+           const showTotal = document.getElementById("show-total");
+          let quantity =parseInt( quantityText.innerText);
+          
+        
+          if(quantity>1)
+          {
+            quantityText.innerText = --quantity;
+          }
+         else {
+            alert(" You cannot add less than 1 item.");
+        }
+        showQantity.innerText = `${Qantity} x 1500`;
+        showTotal.innerText =`Total:${quantity*1500}`;
+        }
+    </script>
+</body>
+</html>
