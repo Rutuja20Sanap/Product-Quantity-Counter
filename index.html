@@ -4,6 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prodct Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+NO:wght@100..400&display=swap');        
+        body{
+            margin: 0px;
+            padding:0px;
+            justify-content: center;
+            background-color: #faf8f8;
+        }
+        h1{
+            font-size: 30px;
+            color:#14010f;
+            font-family: "Playwrite FR Moderne", cursive;      
+                  text-align: center;
+                 
+
+
+        }
+        .watch-img{
+            height: 150px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 20px;
+            background-image: linear-gradient( 135deg, #fcf4cc 10%, #bd5ba3 100%);
+            padding:20px 45px;
+}
+
+        .product-card{
+            background-color: #fff;
+            width: 250px;
+            border-radius: 20px;
+         
+            box-shadow: 0 0 10px rgba(0,0, 0, 1);
+            display: block;
+            margin: 20px auto;
+            padding: 5px;
+            
+        }
+        .title{
+            font-size: 20px;
+            font-family: Libre Baskerville; 
+
+            
+
+        }
+        .card-body{
+            margin-left: 7px;
+        }
+        .desc{
+            font-size: 17px;
+        }
+        .product-price{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .btn{
+            
+            background-image: linear-gradient( 135deg, #fcf4cc 10%, #b63293 100%);
+            border: none;
+            color: #101010;
+            border-radius: 20px;
+            padding: 5px 20px;
+            display: block;
+            margin: 10px auto;
+            height:50px;
+            font-size:17px;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif; 
+
+        }
+        .btn-quantity{
+            height: 25px;
+        }
+        .quantity-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .quantity-text{
+            font-size: 25px;
+            margin: auto  15px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Increment and Decrement for Product Items</h1>
